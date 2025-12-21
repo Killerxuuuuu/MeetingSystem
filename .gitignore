@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.so
+.env
+.ipynb_checkpoints/
+.conda/
+env/
+venv/
+.venv/
+.vscode/
+.idea/
+data/*.wav
+data/*.mp3
+data/temp_*.wav
+*.log
