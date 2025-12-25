@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meeting_system"
+version = "0.1.0"
+description = "A manual implementation of speaker diarization and ASR system using SpeechBrain and Whisper."
+authors = [{ name = "2edbef4a9b", email = "echofedn@outlook.com" }]
+dependencies = [
+    "datasets",
+    "torch",
+    "torchaudio",
+    "torchcodec",
+    "speechbrain",
+    "scikit-learn",
+    "soundfile",
+    "speechbrain",
+    "huggingface-hub<0.14",
+    "numpy",
+    "faster-whisper",
+    "tqdm",
+    "pydub",
+    "pyaudio",
+    "transformers",
+    "matplotlib",
+]
+requires-python = "<3.11,>=3.10.19"
+
+[project.optional-dependencies]
+dev = ["black", "ruff", "mypy"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.black]
+target-version = ["py310"]
+exclude = '''
+/(
+    \.venv
+)/
+'''
+
+[tool.ruff]
+target-version = "py310"
+lint.select = ["E", "F", "B", "I", "UP", "C4", "SIM", "PL", "RUF"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+
+[tool.setuptools.packages.find]
+exclude = ["data"]
