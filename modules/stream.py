@@ -72,7 +72,7 @@ class StreamingMeetingProcessor:
     def __init__(
         self,
         buffer_duration: float = 60.0,  # 60 seconds of audio buffer
-        processing_interval: float = 10.0,  # Process every 5 seconds
+        processing_interval: float = 10.0,  # Process every 10 seconds
         sample_rate: int = 16000,
     ):
         self.buffer_duration = buffer_duration
@@ -156,22 +156,56 @@ class StreamingMeetingProcessor:
                 # Extract audio chunk
                 start_ms = int(segment["relative_start"] * 1000)
                 end_ms = int(segment["relative_end"] * 1000)
+
+                # --- Skip very short segments (< 1.0s) ---
+                if (end_ms - start_ms) < 1000:
+                    continue
+
                 chunk_audio = source_audio[start_ms:end_ms]
+
+                # --- Skip silence (Energy Threshold) ---
+                # RMS (Root Mean Square) amplitude is a measure of loudness.
+                # Adjust this threshold if needed (e.g., 100-500).
+                if chunk_audio.rms < 200:
+                    continue
 
                 # Transcribe
                 chunk_path = "data/temp_chunk.wav"
                 chunk_audio.export(chunk_path, format="wav")
                 text = self.asr_handler.transcribe_file(chunk_path)
 
-                if text.strip():
-                    results.append(
-                        {
-                            "timestamp": segment["start"],
-                            "speaker": f"Speaker {segment['speaker']}",
-                            "text": text.strip(),
-                            "duration": segment["end"] - segment["start"],
-                        }
-                    )
+                # ---  Filter Hallucinations ---
+                clean_text = text.strip()
+                if not clean_text:
+                    continue
+
+                # Common Whisper hallucinations on silence
+                hallucinations = [
+                    "thanks for watching",
+                    "thank you",
+                    "subtitles by",
+                    "amara.org",
+                    "copyright",
+                    "all rights reserved",
+                    "you",
+                    "nope",
+                ]
+
+                # Check if the text is just a hallucination (case-insensitive)
+                if (
+                    any(h in clean_text.lower() for h in hallucinations)
+                    and len(clean_text.split()) < 5
+                ):
+                    continue
+
+                results.append(
+                    {
+                        "timestamp": segment["start"],
+                        "speaker": f"Speaker {segment['speaker']}",
+                        "text": clean_text,
+                        "duration": segment["end"] - segment["start"],
+                    }
+                )
 
             self.last_process_time = time.time()
             return results
