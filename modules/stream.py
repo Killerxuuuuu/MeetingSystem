@@ -92,6 +92,9 @@ class StreamingMeetingProcessor:
         self.speaker_history = {}  # Track speaker embeddings over time
         self.current_speaker_id = 0
 
+        # Track the absolute end time of the last outputted segment to prevent overlap
+        self.last_output_end_time = 0.0
+
     def add_audio_chunk(self, audio_data: np.ndarray, timestamp: float):
         """Add new audio chunk to buffer"""
         self.audio_buffer.append(audio_data)
@@ -131,41 +134,75 @@ class StreamingMeetingProcessor:
             # Run diarization on buffer
             raw_segments = self.diarizer.run(temp_path, num_speakers=2)
 
-            # Filter to recent segments only (last processing_interval seconds)
-            current_time = time.time()
-            recent_segments = []
-            for segment in raw_segments:
-                # Convert relative time to absolute time
-                segment_time = self.buffer_timestamps[0] + segment["start"]
-                if current_time - segment_time <= self.processing_interval * 1.5:
-                    recent_segments.append(
-                        {
-                            "start": segment_time,
-                            "end": self.buffer_timestamps[0] + segment["end"],
-                            "speaker": segment["speaker"],
-                            "relative_start": segment["start"],
-                            "relative_end": segment["end"],
-                        }
-                    )
+            if not self.buffer_timestamps:
+                return []
 
-            # Transcribe recent segments
+            buffer_start_time = self.buffer_timestamps[0]
+
+            # 1. Convert to absolute segments and Trim Overlaps
+            abs_segments = []
+            for segment in raw_segments:
+                abs_start = buffer_start_time + segment["start"]
+                abs_end = buffer_start_time + segment["end"]
+
+                # If segment ends before our last output, it's a duplicate. Skip it.
+                if abs_end <= self.last_output_end_time:
+                    continue
+
+                # If segment starts before our last output, trim the start.
+                # This handles the boundary case where a sentence was cut in half.
+                relative_start = segment["start"]
+                if abs_start < self.last_output_end_time:
+                    adjustment = self.last_output_end_time - abs_start
+                    abs_start = self.last_output_end_time
+                    relative_start += adjustment
+
+                abs_segments.append(
+                    {
+                        "start": abs_start,
+                        "end": abs_end,
+                        "speaker": segment["speaker"],
+                        "relative_start": relative_start,
+                        "relative_end": segment["end"],
+                    }
+                )
+
+            # 2. Merge Adjacent Segments (Fixes incomplete sentences)
+            merged_segments = []
+            if abs_segments:
+                # Sort by start time
+                abs_segments.sort(key=lambda x: x["start"])
+
+                curr = abs_segments[0]
+                for next_seg in abs_segments[1:]:
+                    # Merge if same speaker and gap is small (< 1.0s)
+                    if (
+                        next_seg["speaker"] == curr["speaker"]
+                        and next_seg["start"] - curr["end"] < 1.0
+                    ):
+                        curr["end"] = next_seg["end"]
+                        curr["relative_end"] = next_seg["relative_end"]
+                    else:
+                        merged_segments.append(curr)
+                        curr = next_seg
+                merged_segments.append(curr)
+
+            # 3. Transcribe Merged Segments
             results = []
             source_audio = AudioSegment.from_wav(temp_path)
 
-            for segment in recent_segments:
+            for segment in merged_segments:
                 # Extract audio chunk
                 start_ms = int(segment["relative_start"] * 1000)
                 end_ms = int(segment["relative_end"] * 1000)
 
-                # --- Skip very short segments (< 1.0s) ---
-                if (end_ms - start_ms) < 1000:
+                # Skip very short segments (< 0.5s) - relaxed from 1.0s due to merging
+                if (end_ms - start_ms) < 500:
                     continue
 
                 chunk_audio = source_audio[start_ms:end_ms]
 
-                # --- Skip silence (Energy Threshold) ---
-                # RMS (Root Mean Square) amplitude is a measure of loudness.
-                # Adjust this threshold if needed (e.g., 100-500).
+                # Skip silence (Energy Threshold)
                 if chunk_audio.rms < 200:
                     continue
 
@@ -174,12 +211,11 @@ class StreamingMeetingProcessor:
                 chunk_audio.export(chunk_path, format="wav")
                 text = self.asr_handler.transcribe_file(chunk_path)
 
-                # ---  Filter Hallucinations ---
+                # Filter Hallucinations
                 clean_text = text.strip()
                 if not clean_text:
                     continue
 
-                # Common Whisper hallucinations on silence
                 hallucinations = [
                     "thanks for watching",
                     "thank you",
@@ -191,7 +227,6 @@ class StreamingMeetingProcessor:
                     "nope",
                 ]
 
-                # Check if the text is just a hallucination (case-insensitive)
                 if (
                     any(h in clean_text.lower() for h in hallucinations)
                     and len(clean_text.split()) < 5
@@ -205,6 +240,11 @@ class StreamingMeetingProcessor:
                         "text": clean_text,
                         "duration": segment["end"] - segment["start"],
                     }
+                )
+
+                # Update the last output time to prevent future overlaps
+                self.last_output_end_time = max(
+                    self.last_output_end_time, segment["end"]
                 )
 
             self.last_process_time = time.time()
