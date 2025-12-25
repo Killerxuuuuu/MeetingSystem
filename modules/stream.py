@@ -71,8 +71,8 @@ class StreamingAudioCapture:
 class StreamingMeetingProcessor:
     def __init__(
         self,
-        buffer_duration: float = 30.0,  # 30 seconds of audio buffer
-        processing_interval: float = 5.0,  # Process every 5 seconds
+        buffer_duration: float = 60.0,  # 60 seconds of audio buffer
+        processing_interval: float = 10.0,  # Process every 5 seconds
         sample_rate: int = 16000,
     ):
         self.buffer_duration = buffer_duration
