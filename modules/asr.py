@@ -1,6 +1,6 @@
 from faster_whisper import WhisperModel
 
-import config
+from modules import config
 
 
 class ASRHandler:

@@ -5,7 +5,7 @@ from sklearn.cluster import SpectralClustering
 from speechbrain.inference.classifiers import EncoderClassifier
 from tqdm import tqdm
 
-import config
+from modules import config
 
 
 class ManualDiarizer:
@@ -54,7 +54,7 @@ class ManualDiarizer:
         timestamps = []  # Store time range for each window: [start, end]
 
         print(
-            f"[Step 1] Starting Sliding Window Feature Extraction (Total Duration: {total_samples/fs:.2f}s)..."
+            f"[Step 1] Starting Sliding Window Feature Extraction (Total Duration: {total_samples / fs:.2f}s)..."
         )
 
         # 3. Sliding Window Loop
