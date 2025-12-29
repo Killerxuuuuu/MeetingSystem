@@ -13,3 +13,4 @@ data/*.wav
 data/*.mp3
 data/temp_*.wav
 *.log
+*.egg-info

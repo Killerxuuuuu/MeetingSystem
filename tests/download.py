@@ -1,6 +1,7 @@
-from datasets import load_dataset
-import soundfile as sf
 import os
+
+import soundfile as sf
+from datasets import load_dataset
 
 os.makedirs("data", exist_ok=True)
 
