@@ -1,0 +1,173 @@
+[09:15:52] Speaker 1: Yeah.
+[09:15:54] Speaker 0: Okay.
+[09:16:04] Speaker 0: Okay.
+[09:16:09] Speaker 1: Who wants to take notes today?
+[09:16:23] Speaker 1: Okay, I could take notes this time, I guess. What? I'll take notes this time, I guess.
+[09:16:32] Speaker 1: It actually goes first.
+[09:17:10] Speaker 0: Very interesting start of the meeting.
+[09:17:15] Speaker 1: Everyone's looking now and reading.
+[09:18:17] Speaker 0: I'm not sure if we need the outline of the prototype, I mean what are we going to put into that? Well, just sort of. Well, the thing is, yeah, we're going to be touching on all that during the other part for the progress. Yeah, because I mean that's basically what we're doing here, isn't it, the whole. Yeah. Well, it was just something that he had mentioned in the previous, like just to sort of have a prototype together and sort of just saying that, you know, we could potentially do that. Yeah, we could find something we have to.
+[09:18:59] Speaker 0: Yeah, sure. Like, the thing is, I was thinking even in the stuff that I was...
+[09:19:03] Speaker 0: thing is I was thinking even in the stuff that I was doing I mean just throw the screenshots in there when you talk about what you're doing yeah you can either we can just ignore that oh yes go actually I have that at the very end screenshots but that didn't show up on this page
+[09:19:14] Speaker 0: page, so it's not even relevant.
+[09:19:17] Speaker 0: Oh, yes, actually I have that at the very end screenshots, but that didn't show up on this page
+[09:19:41] Speaker 1: Yeah, I've written the topic segmentation one. Cool.
+[09:19:44] Speaker 0: So I don't know if there's other stuff that you think should be done to this. I could do that before I mail it to you guys.
+[09:20:06] Speaker 0: into this one. I think Penelope should do it. No.
+[09:20:08] Speaker 1: Perfectionist. Yes. That's a good idea. Let's just cut out the middle man.
+[09:20:17] Speaker 0: You're gonna tell us we got it wrong anyways.
+[09:20:21] Speaker 1: and I'm being like not a native speaker of English
+[09:20:27] Speaker 1: I don't know the English.
+[09:20:32] Speaker 1: Yeah, I'll see you if you want to keep going with that. I'm happy to do some as well. I have lots of time tonight.
+[09:20:39] Speaker 1: with that. I'm happy to do some as well. I have lots of time tonight. And then we'll send it to you and you can do the final review. Yeah, I'll look at it like when my...
+[09:20:53] Speaker 1: my usual working hours are like from 12 o'clock to three o'clock or something. So if you can work on that then it always makes me feel bad.
+[09:21:04] Speaker 1: We're going to send you back. We're going to send you back.
+[09:21:04] Speaker 0: It always makes me feel bad, because when I go to bed at like one, you're still online. You never go to bed. Or just leave your computer on, maybe.
+[09:21:17] Speaker 1: Your computer on, maybe. Yeah. OK.
+[09:21:19] Speaker 0: Yeah, you pretend. Always busy.
+[09:21:21] Speaker 1: Yeah, we're actually not.
+[09:21:23] Speaker 1: So maybe but I'm never online in the morning. So
+[09:21:30] Speaker 0: Yeah, I noticed that. No one is. Okay, so I'll send it off to you. Yeah, do what you want to do with it first.
+[09:21:43] Speaker 1: Yeah, do what you want to do with it first and then I'll send it out to you again.
+[09:21:52] Speaker 0: Was there anything else we wanted to add to the timeline? I mean, essentially, was what...
+[09:21:56] Speaker 1: we wanted to add to the timeline. I mean, essentially was what, like, you can't see it right there. Here's the old one. Oh, there's more. Well, that's this original one. Oh, this is the one that, okay. Yeah, yeah, which just copied straight out.
+[09:22:08] Speaker 1: You can't see it right there. Here's the old one. Oh, there's more. Well, that's the original one. Oh, this is the one that, okay. Yeah, yeah, which just copied straight out.
+[09:22:16] Speaker 0: We probably want to think about if we want to change our goals and stuff. I think one thing that we could probably skip totally is the removing things from the audio files. That's what I thought as well. I mean, are we actually going to attempt that? No.
+[09:22:36] Speaker 1: Are we actually going to attempt that? No, I don't think so either. That's too big. I think that's going to be, we don't even know how to approach that. It's a good thing to have to say we get what we could have done.
+[09:22:49] Speaker 1: to have to say we get what we could have done if we had more time good future work things and it's to get the conclusion yeah it's a fun report should have we had more time
+[09:22:59] Speaker 0: Unless we discover some sort of time.
+[09:23:01] Speaker 1: Yeah.
+[09:23:01] Speaker 0: Yeah, yeah, that's right.
+[09:23:03] Speaker 1: Unless we discover some sort of time warp thing, it's not gonna happen.
+[09:23:06] Speaker 0: yeah yeah but that's definitely one thing so maybe i mean we should we should definitely well we could probably not put it under this heading but put it on
+[09:23:23] Speaker 1: Always felt they were more important
+[09:23:59] Speaker 0: or some of them are a bit late.
+[09:24:00] Speaker 1: or some of them were a bit later, some were, yeah. Yeah, that's another thing, I should have a section. Mike.
+[09:24:04] Speaker 0: Like, we haven't really...
+[09:24:07] Speaker 0: We could even. We should have a section. Mike.
+[09:24:09] Speaker 1: Like, we haven't really developed prototype GUI, which is, you know, nice and easy.
+[09:24:15] Speaker 0: Best fall on target, or something like that. It's more or less.
+[09:24:18] Speaker 1: Yeah, yeah. It's more or less. Yeah. But it's pretty good.
+[09:24:20] Speaker 0: I'm not a kid.
+[09:24:22] Speaker 1: Plus or minus.
+[09:24:23] Speaker 0: Plus or minus three days. He doesn't have to know exactly. Yeah, that's true, that's true. I mean, yeah, I mean, it's not finished, but.
+[09:24:33] Speaker 0: I've only got six days to do the topic segment.
+[09:24:39] Speaker 1: You don't have any SPNLP assignments, do you?
+[09:24:44] Speaker 1: Yeah.
+[09:24:44] Speaker 0: And you can say, yeah, we're still aiming for the development to be completely maturated.
+[09:25:00] Speaker 0: Ready? Oh really? Yeah, two days.
+[09:25:01] Speaker 1: Yeah, two days ago.
+[09:25:02] Speaker 0: Are one of those something that you want to change and delete from our?
+[09:25:08] Speaker 1: Are one of those something that you want to change and delete from our list of expectations?
+[09:25:15] Speaker 0: Give me a week and I'll tell you the answer.
+[09:25:18] Speaker 1: Should we put a hint that something like that might happen into the document?
+[09:25:23] Speaker 0: into the document. Maybe the speaker characterization might get slimmer. Yeah, that's right. I really wanna do it. We won't disappear. It's not gonna be difficult. At least have all the information pop up that is already.
+[09:25:35] Speaker 0: Okay, all right.
+[09:25:35] Speaker 1: That's right. I really want to do it. It's not going to be difficult. At least have all the information pop up that is already in the metadata file. That's going to be new work. So it's definitely going to be something there.
+[09:26:03] Speaker 1: The topic segmentation with LCSEG and textiles is basically done, it just needs to be done. Tuned? Yeah, tuned, yeah. Searched the parameters, but it's made in, or something, and see what happens.
+[09:26:20] Speaker 0: Let's see what happens.
+[09:26:23] Speaker 1: We'll see what happens.
+[09:26:25] Speaker 1: Let's see what happens.
+[09:27:32] Speaker 0: Well, if we're skipping the audio one, then it's not easier.
+[09:27:37] Speaker 0: Yeah, we just keep it together on the paper there right now and just see what it looks like.
+[09:27:53] Speaker 1: tomorrow. Yeah. Yeah. We could just make it happen. We could just make it happen.
+[09:27:56] Speaker 0: Like, I'll claim one, you claim the other for the search things and then we can...
+[09:28:06] Speaker 0: Have you managed any further on the search thing?
+[09:28:09] Speaker 1: search thing? Um, I found, finally.
+[09:28:12] Speaker 0: thing.
+[09:28:12] Speaker 1: thing I found finally today something that I can build it in and I should have something for tomorrow I should at least very least have a GUI where I'll be wearing that
+[09:28:25] Speaker 0: I'll be wearing that in hopefully tomorrow morning. So I want to get something, I want to see this, I want to get it together. I have an image in my mind, I just want to see it on the thing and then get a nice screenshot.
+[09:28:39] Speaker 1: Yeah, my intent is to work on these things tomorrow a bit more as well, so I don't know if we send it in in the afternoon.
+[09:28:48] Speaker 1: I don't know if we send it in in the afternoon. Maybe I can add a few sentences to what I've done. It doesn't really matter.
+[09:28:53] Speaker 0: It doesn't really matter. I mean, you can write the sentences first as well. I mean, with the intention that this is done.
+[09:28:59] Speaker 1: Yeah, that is done.
+[09:29:01] Speaker 0: Yeah, yeah. This is done.
+[09:29:01] Speaker 1: This is done, and also, sometimes it's a bit of a motivating...
+[09:29:04] Speaker 0: it's a bit of a motivating factor too. I mean, you write down the words and the ideas as, oh, okay, we'll do this, I'll do that. It all falls together. How about the underlying?
+[09:29:16] Speaker 1: Sometimes it's a bit of a motivating...
+[09:29:17] Speaker 0: it's a bit of a motivating factor too. I mean you write down the words and the ideas as oh okay we'll do this. How about the underlying data for it for the inverted file?
+[09:29:58] Speaker 1: Yeah, when it pulls up the segments, part of that, one of the attributes, if you do get attributes, it returns a list of attributes, search through those and that will tell you what attributes it's got. And then you can even do it.
+[09:30:16] Speaker 1: and that will tell you what attributes it's got. And then you can either do it automatically or you can just hard code and say, look, get me the timestamps. So you just say, get attribute and put, I think the method's called get attribute.
+[09:31:17] Speaker 1: So is there, have you made another end browser? Is there something that I should- There is, but I haven't made a lot of changes to it, so I might just delete what I've done and copy again from yours, because I'm sure-
+[09:31:40] Speaker 1: But I will tonight, that's the plan.
+[09:31:50] Speaker 1: No, after the weekend, the weekend was out.
+[09:31:55] Speaker 0: Yeah, so if you're, although there's stuff out there that, actually I'm gonna try and minimize the amount of changes that make Dan browser anyways. Shouldn't be an issue. Actually, just to clarify, last week when we were talking about our search results, like if we have topics as well as transcripts, as well as what was the other, summaries, do we want separate result panes for each of those or do we want them all in one pane with like an icon or a different color or something to indicate what type?
+[09:32:42] Speaker 1: At the moment, is there a window that comes up or is there a second result of pain?
+[09:32:51] Speaker 0: I think what we sort of discussed last week was to have it on the same window, so it'll be on the search window, the bottom half of the search window.
+[09:33:35] Speaker 1: Three separate windows for the three separate different types.
+[09:33:36] Speaker 0: with three separate different types of results. No, just pains, just result pains.
+[09:33:39] Speaker 1: just result pains. So it's just when we click topics and summaries for what we want to search.
+[09:33:50] Speaker 0: what we want to search then a little you know there'll be two result panes yeah so for topics one for I don't know really tabs but then you can't see all at the same time
+[09:34:02] Speaker 0: at the same time you wouldn't want to compare the result the topic one topic result with one summary well it's no but the thing is if you're looking if you check them both you want to see all the results
+[09:34:14] Speaker 0: Yeah, it is.
+[09:34:33] Speaker 0: Oh yeah, I guess that was the other thing, whether we want to have this reorder by...
+[09:34:38] Speaker 1: was reorder by columns and all that.
+[09:34:41] Speaker 0: Reorder by columns and all that.
+[09:34:44] Speaker 0: That was the other thing, whether we want to have this reorder by columns or not. Well, that's a hard question. It's a lot of work. Even the second step, the first question is, do we want to order them? How do we want to order them in the first place? Yeah. I think, yeah, probably by meeting makes most sense. I mean, essentially they're in time order. So, yeah, that kind of makes most sense. Yeah, maybe we should do that.
+[09:36:07] Speaker 0: Where's if it's coming from? If you do it...
+[09:36:13] Speaker 0: Where's if it's coming from? If you do it...
+[09:36:16] Speaker 0: coming from. If you do it.
+[09:38:34] Speaker 0: I'm sure there's a lot of pain in it. Night. I don't know. Text area. Yeah, something like that. Nom text areas. I don't know. Mostly things are called nom. Yeah, what's nom anyway? Night object model.
+[09:38:48] Speaker 1: object model. Okay. That makes sense. What did you say?
+[09:38:52] Speaker 1: What is it? Night object model, I think. That's what I think. Okay. Yeah.
+[09:39:03] Speaker 0: That's what I need to do.
+[09:39:43] Speaker 0: I thought we were just going to have that as words like not even not as XML just sort of as a
+[09:39:48] Speaker 1: of is a is a block of text. What was that um text file transcript recently
+[09:39:57] Speaker 0: You will very much limit what you can do with it if it's not in XML format. There is some bizarre method that puts things back into XML format. Why do we want it in XML though? I mean, I thought we'd just selectively write the XML that we've got. So as opposed to... Oh, select what we want, just take bits of the XML, only take certain segments. Yeah, only print out certain...
+[09:40:24] Speaker 1: out certain segments, the segments that we want, just selectively. At the moment it prints out all of them, we'll just put an if loop in it that leaves out some of the print statements.
+[09:40:35] Speaker 1: not not store it at all whatsoever. Okay. That oh yeah. Yeah. That's what I think.
+[09:40:41] Speaker 0: Yeah, I know. That's sort of what we were thinking before.
+[09:40:43] Speaker 1: where we were thinking before. Actually, but this makes more sense.
+[09:40:46] Speaker 0: actually but this makes more sense but that will mean that you can only do things on actually now because you can do things on word level so yeah that's fine yeah if we're gonna do the XML then fine
+[09:40:56] Speaker 1: We were not really
+[09:40:58] Speaker 0: we're not really well I mean we're not going to do much more than just look at the like the text will remove this
+[09:41:34] Speaker 0: I think it's like, well, how would we display the like if we do take this
+[09:41:38] Speaker 0: Yeah, that's right. I think it's like, well.
+[09:41:39] Speaker 1: I think it's like, well, how would we display the like, if we do take this fluencies out and just create a text file, take the disfluencies out of the text file.
+[09:41:44] Speaker 0: It would just be a blurb, like a summary. It won't look like, it won't say speaker X says this, speaker Y says that, speaker Z says this.
+[09:41:52] Speaker 0: says this, Speaker Y says that, Speaker Z says this.
+[09:41:54] Speaker 1: Unless we extract that over to the file when we create the text file.
+[09:41:57] Speaker 0: text file. Yeah, then it will look ugly probably because it will look just black and white unless you want to start cutting. It's probably the best thing to do, as you said.
+[09:42:05] Speaker 0: extract that over to the file when we create the text file. Yeah.
+[09:42:06] Speaker 1: text file. Yeah, then it will look ugly probably because it will look just black and white. Unless you want a dark color. It's probably the best thing to do.
+[09:44:27] Speaker 1: it back into xml with java even trying to read it in xml with java was complicated enough i gave up doing that completely they vaulted back to night stuff
+[09:44:36] Speaker 1: night stuff because it was much much much easier yeah so we can do it with night stuff Java trying to do it was just so complicated it was really
+[09:44:46] Speaker 1: It was really good.
+[09:44:46] Speaker 0: That was really good.
+[09:44:49] Speaker 1: trying to do that, it was just so complicated, it was ridiculous.
+[09:44:51] Speaker 0: It was really good.
+[09:45:56] Speaker 0: No, it shouldn't be. It should be higher level. It should be conceptual and, you know, coming up with the brilliant ideas and then just, yeah.
+[09:46:06] Speaker 0: Yeah, bring those to reality. Yeah, maybe, it's the higher people.
+[09:46:15] Speaker 1: Well, I mean...
+[09:46:17] Speaker 0: Maybe, it's the higher people.
+[09:47:35] Speaker 0: as well. Yeah, I created a feature.
+[09:47:38] Speaker 0: I included the future work in my own section but I just said I said what I've done so far and what I'm going to do yeah well maybe some issues
+[09:47:48] Speaker 0: Maybe you could split that up.
+[09:47:48] Speaker 1: Maybe you can split that up and... Oh, like into each... Yeah, like here is what we've done already and then, you know, down...
+[09:47:55] Speaker 0: then you know lose a bit of continuity if you do that that's what I was thinking sometimes it's easier to have the top
+[09:48:00] Speaker 1: Sometimes it's easier to have the top in its own intersections, if you know what I mean. So you talk about speaker characters and you see what you've done. I think that does...
+[09:48:05] Speaker 0: That does make sense, but maybe at the end maybe just a point form of you know things that we're still working on things
+[09:48:11] Speaker 0: We're still working on things that we'll do. Goals or something. Yeah, that's right. Bullet points. Yeah, maybe. Yeah, because if you have a discursive thing here and then another discursive thing there, if they're not together, you lose a lot of it. Yeah, maybe.
+[09:48:23] Speaker 0: If they're not together, you lose a lot of continuity.
+[09:48:29] Speaker 1: another discuss you think you know yeah they're not together you lose a lot of it
+[09:48:33] Speaker 0: You're right. I know. Sounds good. Anything else anyone wants to talk about? We all have sleep, don't we? Yeah. But how? Boom. What? Maybe a s-
+[09:49:23] Speaker 0: Maybe asleep. Yeah maybe asleep.
+[09:49:32] Speaker 0: So, we're all still writing our...
+[09:49:44] Speaker 0: Or no? What? OK.
+[09:49:45] Speaker 1: Okay, I can, yeah, sure, if you want to send them to me.
+[09:49:48] Speaker 0: If you want to send them to me, that's fine. I don't know. It doesn't matter to me either. Actually, that's a good idea.
+[09:49:51] Speaker 1: Actually that's a good idea. I'll take one quick look over try and get it as good as I think that we yeah
+[09:50:00] Speaker 0: And then send it on to us so that we can nod.
+[09:50:05] Speaker 1: Curly formality.
+[09:50:06] Speaker 0: Yeah, and correct back any things that I thought was...
+[09:50:11] Speaker 0: correct back any like things that I thought was wrong in English or whatever, it's like no.
+[09:50:16] Speaker 1: It's like, no. We're changing dialogue back.
+[09:50:18] Speaker 0: We'll be right back.
+[09:50:19] Speaker 1: I love you. I love you.
+[09:50:21] Speaker 0: Okay.
+[09:50:24] Speaker 0: Okay, sounds good. Yeah. I haven't used my pen. Oh. Ooh. I have. That was like four lines, so, whatever. Okay.
+[09:50:36] Speaker 0: I'm flying, so, whatever. Yeah, in 12.30 tomorrow with. Oh, oh.
+[09:50:43] Speaker 1: Oh, oh, oh, oh, oh, oh, oh, oh, oh. See you.
+[09:50:44] Speaker 0: It's just emo. It's just emo. Oh god. Good job, you're a man. What?
+[09:50:49] Speaker 0: Oh, oh, that's just emo. Good job, you remind me. Yeah, yeah.
+[09:51:13] Speaker 1: 12 days in a row, yeah, that much of a lie in the US.

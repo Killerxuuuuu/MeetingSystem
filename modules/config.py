@@ -1,7 +1,7 @@
 # config.py
 
 # Algorithm Hyperparameters
-NUM_SPEAKERS = 2  # Target number of speakers to distinguish
+NUM_SPEAKERS = None  # Target number of speakers to distinguish (Set to None for auto-detection)
 WINDOW_SIZE = 2.0  # Sliding window size (in seconds) for feature extraction
 STEP_SIZE = 1.0  # Step size (in seconds), 50% overlap
 

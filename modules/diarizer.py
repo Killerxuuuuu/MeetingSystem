@@ -5,6 +5,7 @@ from sklearn.cluster import SpectralClustering
 from sklearn.preprocessing import normalize
 from speechbrain.inference.classifiers import EncoderClassifier
 from tqdm import tqdm
+from scipy.sparse import csgraph
 
 from modules import config
 
@@ -123,6 +124,35 @@ class ManualDiarizer:
             # Sanitize affinity matrix numerically
             affinity = np.nan_to_num(affinity, nan=0.0, posinf=0.0, neginf=0.0)
             np.fill_diagonal(affinity, 1.0)
+
+            if num_speakers is None:
+                try:
+                    # Compute Laplacian
+                    L = csgraph.laplacian(affinity, normed=True)
+                    # Compute eigenvalues
+                    eigenvalues, _ = np.linalg.eig(L)
+                    eigenvalues = np.sort(eigenvalues.real)
+
+                    # Heuristic: Look for largest gap in the first few eigenvalues
+                    # We assume max 8 speakers for a meeting chunk
+                    max_search = min(len(eigenvalues), 8)
+                    if max_search > 1:
+                        gaps = np.diff(eigenvalues[:max_search])
+                        # The index of the max gap corresponds to the number of clusters
+                        # e.g. gap between lambda_k and lambda_{k+1}
+                        # diff array index i corresponds to gap between i and i+1
+                        # if max gap is at index k-1, then we have k clusters.
+                        # e.g. [0.1, 0.1, 0.9]. diff=[0, 0.8]. argmax=1. num=2.
+                        num_speakers = np.argmax(gaps) + 1
+                    else:
+                        num_speakers = 1
+
+                    # Enforce at least 1 speaker
+                    num_speakers = max(1, num_speakers)
+                    print(f"[Auto-Detect] Estimated number of speakers: {num_speakers}")
+                except Exception as e:
+                    print(f"[Warning] Auto-detection failed: {e}. Defaulting to 2.")
+                    num_speakers = 2
 
             print(
                 f"[Step 2] Performing Spectral Clustering (Target Speakers: {num_speakers})..."
