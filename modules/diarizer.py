@@ -1,11 +1,11 @@
 import numpy as np
 import torch
 import torchaudio
+from scipy.sparse import csgraph
 from sklearn.cluster import SpectralClustering
 from sklearn.preprocessing import normalize
 from speechbrain.inference.classifiers import EncoderClassifier
 from tqdm import tqdm
-from scipy.sparse import csgraph
 
 from modules import config
 

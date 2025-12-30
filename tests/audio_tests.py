@@ -9,12 +9,12 @@ if not hasattr(torchaudio, "list_audio_backends"):
 
     torchaudio.list_audio_backends = _list_audio_backends
 
-from pydub import AudioSegment
-
 import config
+from pydub import AudioSegment
+from utils import merge_segments
+
 from modules.asr import ASRHandler
 from modules.diarizer import ManualDiarizer
-from utils import merge_segments
 
 
 def main():

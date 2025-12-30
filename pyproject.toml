@@ -28,7 +28,15 @@ dependencies = [
 requires-python = "<3.11,>=3.10.19"
 
 [project.optional-dependencies]
-dev = ["black", "ruff", "mypy"]
+dev = [
+    "black",
+    "ruff",
+    "mypy",
+    "jiwer>=4.0.0",
+    "matplotlib>=3.10.8",
+    "seaborn>=0.13.2",
+    "psutil>=7.2.1",
+]
 
 [tool.pyright]
 venvPath = "."
