@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-12-30T21:55:15.662924",
+  "audio_file": "data/ami_test_meeting.wav",
+  "diarization": {
+    "average_time": 9.617203521728516,
+    "std_time": 0.3262857519553901,
+    "min_time": 9.229563236236572,
+    "max_time": 10.119985342025757,
+    "average_memory_delta_mb": 0.1625,
+    "num_segments": 1785,
+    "total_runs": 5
+  },
+  "asr": {
+    "average_time": 95.00760316848755,
+    "std_time": 7.825217461463581,
+    "min_time": 85.13087296485901,
+    "max_time": 104.59138917922974,
+    "average_memory_delta_mb": -0.67265625,
+    "text_length": 22306,
+    "total_runs": 5
+  },
+  "pipeline": {
+    "average_time": 0.1152957280476888,
+    "std_time": 0.004512657049578908,
+    "min_time": 0.11017251014709473,
+    "max_time": 0.12115287780761719,
+    "average_memory_delta_mb": 0.16666666666666666,
+    "total_runs": 3
+  },
+  "rtf": {
+    "audio_duration": 1786.848,
+    "processing_time": 10.90081238746643,
+    "real_time_factor": 0.006100581799608266,
+    "is_real_time": true
+  },
+  "system_info": {
+    "cpu_count": 20,
+    "memory_total_mb": 15675.49609375,
+    "torch_cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  }
+}
