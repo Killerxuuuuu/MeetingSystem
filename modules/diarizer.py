@@ -1,11 +1,11 @@
 import numpy as np
 import torch
 import torchaudio
+from scipy.sparse import csgraph
 from sklearn.cluster import SpectralClustering
 from sklearn.preprocessing import normalize
 from speechbrain.inference.classifiers import EncoderClassifier
 from tqdm import tqdm
-from scipy.sparse import csgraph
 
 from modules import config
 
@@ -110,7 +110,7 @@ class ManualDiarizer:
             raise ValueError("All sliding windows produced invalid embeddings.")
 
         # If after filtering there are fewer windows than speakers, fall back.
-        if X.shape[0] < num_speakers:
+        if num_speakers and X.shape[0] < num_speakers:
             print(
                 f"[Warning] only {X.shape[0]} valid windows for {num_speakers} speakers; "
                 "falling back to single-speaker labeling for these windows."

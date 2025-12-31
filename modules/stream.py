@@ -132,7 +132,7 @@ class StreamingMeetingProcessor:
 
         try:
             # Run diarization on buffer
-            raw_segments = self.diarizer.run(temp_path, num_speakers=2)
+            raw_segments = self.diarizer.run(temp_path)
 
             if not self.buffer_timestamps:
                 return []

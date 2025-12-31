@@ -1,8 +1,0 @@
-torch
-torchaudio
-speechbrain
-scikit-learn
-numpy
-faster-whisper
-tqdm
-pydub

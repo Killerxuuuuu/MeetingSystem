@@ -9,12 +9,12 @@ if not hasattr(torchaudio, "list_audio_backends"):
 
     torchaudio.list_audio_backends = _list_audio_backends
 
-from pydub import AudioSegment
-
 import config
+from pydub import AudioSegment
+from utils import merge_segments
+
 from modules.asr import ASRHandler
 from modules.diarizer import ManualDiarizer
-from utils import merge_segments
 
 
 def main():
@@ -67,11 +67,32 @@ def main():
         # Transcribe the temp file
         text = asr_handler.transcribe_file(temp_filename)
 
+        # Hallucination filter (copy from stream.py)
+        hallucinations = [
+            "thanks for watching",
+            "thank you",
+            "subtitles by",
+            "amara.org",
+            "copyright",
+            "all rights reserved",
+            "you",
+            "nope",
+        ]
+        clean_text = text.strip()
+        if (
+            any(h in clean_text.lower() for h in hallucinations)
+            and len(clean_text.split()) < 5
+        ):
+            # Skip this segment
+            if os.path.exists(temp_filename):
+                os.remove(temp_filename)
+            continue
+
         # Format the output if text is not empty
-        if text.strip():
+        if clean_text:
             speaker_name = f"Speaker {seg['speaker']}"
             time_str = f"[{seg['start']:.2f}s -> {seg['end']:.2f}s]"
-            line = f"{time_str} {speaker_name}: {text}"
+            line = f"{time_str} {speaker_name}: {clean_text}"
 
             print(line)
             final_results.append(line)
